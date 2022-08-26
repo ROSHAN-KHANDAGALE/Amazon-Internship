@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buy Now</title>
+	<style type = "text/css">
+		*{
+			margin: 0;
+			padding:  0;
+		}
+		.all{
+			padding: 20px;
+			background: rgba(0, 0, 0, 0.6);
+			border: 2px solid orange;
+		}
+		body{
+			width: 450px;
+			height: 90px;
+			position: absolute;
+			text-align: center;
+			box-sizing: border-box;
+			left: 50%;
+			bottom: 495px;
+			transform: translate(-45%, 50%);
+			background-image: url('../src/bg.jpg') ;
+			background-size: cover;
+			font-family: Courier;
+		}
+		.all h1{
+			margin: 14px;
+			font-family: Courier;
+			text-align: center;
+			font-size: 30px;
+			color: white;
+		}
+		.add textarea{
+			margin: 13px;
+			width: 300px;
+			height: 80px;
+			text-align: left;
+			font-size: 18px;
+			font-family: Courier;
+			color: black;
+			font-weight: bold;
+
+		}
+		.sel select{
+			margin: 5px;
+			width: 200px;
+			height: 30px;
+			font-family: Impact;
+			font-size: 16px;
+		}
+		.acc input{
+			margin: 15px;
+			width: 190px;
+			height: 30px;
+			font-weight: bold;
+			font-size: 15px;
+		}
+		.sub a button{
+			margin: 10px;
+			width: 140px;
+			height: 30px;
+			font-family: Candara;
+			font-size: 18px;
+			color: black;
+			font-weight: bold;
+		}
+		
+	</style>
+</head>
+<body>
+		<div class = "all">
+	<h1><u>Buy Now</u></h1>
+		<div class = "add">
+			 <textarea rows = "5" cols = "45" placeholder="Enter Permanent Address"></textarea>
+		</div>
+		<div class = "sel">
+			<select id="trial" >
+				<option value = "None">None</option>
+				<option value ="Credit Car/ Debit Card">Credit Car/ Debit Card</option>
+				<option value = "Master Card">Master Card</option>
+				<option value = "Net Banking">Net Banking</option>
+				<option value = "Cash on Delivery">Cash on Delivery</option>
+			</select>	
+		</div>
+		<div class="acc">
+			<input type = "text"  placeholder="Account Number">
+		</div>	
+		<div class = "sub">
+			<a href = "../public/index.html">
+				<button>Submit</button>
+			</a>
+		</div>
+		</div>	
+</body>
+</html>

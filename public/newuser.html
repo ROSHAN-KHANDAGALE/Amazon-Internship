@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create New User</title>
+  <style type="text/css" >
+.sign{
+  width: 400px;
+  padding: 40px;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.7);
+  box-sizing: border-box; 
+  
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Georgia;
+  background-image: url('../src/kami.jpg');
+  background-size: cover;
+}
+input[type = "text"],input[type = "password"]{
+  margin: 10px auto;
+  padding: 5px 0px;
+  border: none;
+  border-bottom: 2px solid lime;
+  text-align: center;
+  width: 110px;
+  outline: none;
+  margin-top: 15px; 
+  background: transparent;
+  font-family: Courier New;
+  font-size: 16px;
+  color: white;
+} 
+input[type = "text"]:focus,input[type = "password"]:focus{
+  width: 250px;
+  color: #2ecc71;
+  top: 18px;
+  left: 0;
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+}
+.democlick label{
+  border: 0 ;
+  padding: 14px 30px;
+  margin: 30px auto;
+  display: block;
+  font-family: Impact;
+  background: #7DCEA0;
+  color: #D81B60;
+  font-size: 20px;
+  text-align: center;
+  width: 70px;
+  height: 20px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: 0.9s ease;
+}
+.democlick label:hover{
+  background: green;
+}
+h3{
+  margin: 0px 0px 15px;
+  color: red;
+  font-family: Constantia;
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  text-indent: no-compress;
+}
+p{
+  margin: 20px auto;
+  font-family: Aerial;
+  text-align: center;
+  color: darkcyan;
+  font-size: 19px;
+
+} 
+img{
+  height: 100vh; 
+}
+  footer {
+    background-color:black;
+    color:yellow;
+    clear:both;
+    text-align:center;
+    bottom: 0;
+    padding-bottom: 5px;
+    position: absolute;     
+  }
+  .mar{
+    background-color:black;
+    color:white;
+    font-family: Impact;
+    font-size: 25px;
+  }
+
+ </style>
+  </head>
+  <body> 
+    <div class="mar">
+      <marquee scrollamount="20">This Website is Co-Sponsored by the Students of CO-4-I  DR.Panjabrao Deshmukh Polytechnic, Amravati to Prima Think PVT LTD as for the purpose of Intership Program. For more details contact us on mobile no: +91 7448255689, +91 9823766298, +91 8208195515</marquee>
+    </div>
+    <form class="sign" action="../public/newuser.html">
+       <h3>Create Account</h3>
+        <input type = "text" placeholder="First Name">
+        <input type = "text" placeholder="Middle Name">
+        <input type = "text" placeholder="Last Name"><br>
+        <input type = "password" placeholder="Enter Password">
+        <input type = "password" placeholder="Confirm Password"><br>
+        <input type = "text" placeholder="Mobile No"><br>
+        <input type = "text" placeholder="Enter E-mail">
+        <br>
+        <a class = "democlick" href = "../public/index.html">
+          <label type="submit">Login</label>
+        </a>
+        <p><u><b>By Clicking on Submit you Accept our Terms & Conditions</p></b></u>
+    </form>
+  <footer class="foot">
+      @COPYRIGHT AMAZON TEAM MEMBERS: VAISHNAVI BAKHADE, MUSKAN LAKHNAI, , DNYANESHWARI GANORKAR, DHANASHREE SAWARKAR, ROSHAN KHANDAGALE, ADITYA JAYSINGHPURE, SHARJEEL KHAN
+  </footer>
+</body>
+</html>

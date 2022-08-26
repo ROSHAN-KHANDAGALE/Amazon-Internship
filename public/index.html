@@ -1,0 +1,331 @@
+<html>
+<head>
+<title>Student Amazon (HOME PAGE)</title>
+<style type = "text/css">
+*{
+     padding: 0;
+     margin: 0;
+}
+body
+{
+    background-image: url('../src/bg3.jpg') ;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+}
+	.dropdown{
+        position: relative;
+        display: inline-block;
+    }
+	.dropdown-content{   
+        display: none;
+        position: absolute;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        color: white;
+        font-size: 19px;
+        font-family: Courier;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+	.dropdown a button{
+    width: 200px;
+    height: 50px;
+    background: lightseagreen;
+    font-family: Courier;
+    font-size: 18px;
+    color: white;
+}
+.bu button{
+    margin: 0;
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    background: lightblue;
+    color: blue;
+    font-family: Impact;
+    cursor: pointer;
+}
+.bu button:hover{
+    background: green;
+    transition: 0.8s ease;
+}
+.join label{
+    margin: 10px;
+    box-sizing: border-box;
+    color: white;
+    font-family: Courier;
+    font-size: 20px;
+    cursor: pointer;
+}
+input [type = "button"]{
+	width: 50%;
+	height: 30px;
+}
+.w3-content{
+    top: 10px;
+    transform: translate(15%,15%);
+}
+footer {
+    background-color:black;
+    color: white;
+    clear:both;
+    text-align:center;
+    bottom: 0;
+    font-family: Georgia;
+    padding-bottom: 5px; 
+    font-size: 20px;    
+  }
+</style>
+</head>
+<body bgcolor="#F1F3F6">
+<table border="0" width="100%" bgcolor="navy">
+<tr>
+<td align="right"><img src="../src/A1.png" width="50%" height="50"></td>
+    <td><input type="text"placeholder="Search for products,brand and more" style="width:550px height=60px">
+        <input type="button" value="Search" style = "width:120px;height:30px">
+        </td>
+<th> <a class = "join" href = "../public/login.html" >
+             <label>Login & Signup</label>
+            </a>
+</th>
+<th> <a class = "join" href = "../public/index.html" >
+             <label>Home</label>
+            </a>
+</th>
+<th> <a class="join" href = "../public/cart.html">
+        <label>Cart</label>
+    </a></th>
+</tr>
+</table>
+
+<table border="0"width="100%"  bgcolor="white">
+        <tr>
+<th width="16.6%">
+    <div class="dropdown">
+        <a href = "../public/allbl.html">
+            <button>Luggage & Bag</button>
+        </a>
+    <div class="dropdown-content">
+        <p><a href = "../public/bags.html">
+        <label>Bags</label></a></p>
+       <p><a href = "../public/luggage.html">
+        <label>Luggage</label></a>
+    </p>
+    </div>
+    </div>
+</th>
+
+<th width="16.6%">
+    <div class="dropdown">
+        <a href = "../public/watches_page.html">
+            <button>Watches</button>
+        </a>
+    <div class="dropdown-content">
+        <p><a href = "../public/watches_page.html">
+        <label>All Categories</label></a></p>
+    </div>
+    </div>
+</th>
+
+<th width="16.6%">
+    <div class="dropdown">
+        <a href = "../public/alltb.html">
+            <button>Toys & Baby Products</button>
+        </a>
+    <div class="dropdown-content">
+        <p><a href = "../public/toy.html">
+        <label>Toys</label></a></p>
+        <p><a href = "../public/babyproduct.html">
+        <label>Baby Products</label></a></p>
+    </div>
+    </div>
+</th>
+
+<th width="16.6%">
+    <div class="dropdown">
+        <a href = "../public/shoes.html">
+            <button>Shoes</button>
+        </a>
+    <div class="dropdown-content">
+        <a href = "../public/shoes.html">
+        <label>All Catergory</label></a>
+    </div>
+    </div>
+</th>
+
+<th width="16.6%">
+    <div class="dropdown">
+        <a href = "../public/allfo.html">
+            <button>Fitness & Outdoor</button>
+        </a>
+    <div class="dropdown-content">
+        <p><a href = "../public/fitness.html">
+        <label>Fitness</label></a></p>
+        <p><a href = "../public/outdoor.html">
+        <label>Outdoor</label></a></p>
+    </div>
+    </div>
+</th>
+
+<th width="16.6%">
+    <div class="dropdown">
+        <a href = "../public/allos.html">
+            <button>Office & Stationery</button>
+        </a>
+    <div class="dropdown-content">
+        <p><a href = "../public/office.html">
+        <label>Office</label></a></p>
+        <p><a href = "../public/stationary.html">
+        <label>Stationery</label></a></p>
+    </div>
+    </div>
+</th>
+</tr>
+</table>
+
+<div class="w3-content w3-section" style="max-width:100%">
+    <img class="mySlides" src="../src/banner1.png" style="width:70%;height: 400px">
+    <img class="mySlides" src="../src/banner2.png" style="width:70%;height: 400px">
+    <img class="mySlides" src="../src/banner3.png" style="width:70%;height: 400px">
+    <img class="mySlides" src="../src/banner4.png" style="width:70%;height: 400px">
+    <img class="mySlides" src="../src/banner5.png" style="width:70%;height: 400px">
+    <img class="mySlides" src="../src/banner6.png" style="width:70%;height: 400px">
+</div>
+
+<!--css code for slider -->
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+var i;
+var x = document.getElementsByClassName("mySlides");
+for(i=0;i<x.length;i++) {
+x[i].style.display="none";
+}
+myIndex++;
+if(myIndex>x.length){myIndex=1}
+x[myIndex-1].style.display="block";
+setTimeout(carousel,2000);//change image every 2 seconds
+}
+</script>
+
+<br>
+<br>
+<br>
+<br>
+<table border="0"width="100%" bgcolor="white">
+<tr>
+<td colspan="5"><h2>Luggage & Bags</h2><hr></td>
+<tr>
+<th><img src="../src/bag1.jpg"width="80%"></th>
+<th><img src="../src/bag2.jpg"width="80%"></th>
+<th><img src="../src/bag3.jpg"width="80%"></th>
+<th><img src="../src/bag4.jpg"width="80%"></th>
+<th><img src="../src/bag5.jpg"width="60%">
+<a class = "bu" href="../public/allbl.html">
+    <button>Show Details></button>
+</a></th>
+</tr>
+</table>
+<br>
+<table border="0"width="100%" bgcolor="white">
+<tr>
+<td colspan="5"><h2>Watches</h2><hr></td>
+<tr>
+<th><img src="../src/watch1.png"width="75%"></th>
+<th><img src="../src/watch2.png"width="75%"></th>
+<th><img src="../src/watch3.png"width="75%"></th>
+<th><img src="../src/watch4.png"width="75%"></th>
+<th><img src="../src/watch5.png"width="55%">
+    <a class = "bu" href="../public/watches_page.html">
+    <button>Show Details></button>
+</a></th>
+</tr>
+</table>
+<br>
+<table border="0"width="100%" bgcolor="white">
+<tr>
+<td colspan="5"><h2>Toys</h2><hr></td>
+<tr>
+<th><img src="../src/TOY1.png"width="50%"></th>
+<th><img src="../src/TOY2.png"width="50%"></th>
+<th><img src="../src/TOY3.png"width="130%"></th>
+<th><img src="../src/TOY4.png"width="130%"></th>
+<th><img src="../src/TOY5.png"width="95%" height="190">
+<a class = "bu" href="../public/toy.html">
+    <button>Show Details></button>
+</a></th>
+</tr>
+</table>
+<br>
+<table border="0"width="100%" bgcolor="white">
+<tr>
+<td colspan="5"><h2>Baby Products</h2><hr></td>
+<tr>
+<th><img src="../src/pro1.png"width="75%"></th>
+<th><img src="../src/pro2.png"width="60%"></th>
+<th><img src="../src/pro3.png"width="75%"></th>
+<th><img src="../src/pro4.png"width="75%"></th>
+<th><img src="../src/pro5.png"width="50%">
+<a class = "bu" href="../public/toy.html">
+    <button>Show Details></button>
+</a></th>
+</th>
+</tr>
+</table>
+<br>
+<table border="0"width="100%" bgcolor="white">
+<tr>
+<td colspan="5"><h2>Shoes</h2><hr></td>
+<tr>
+<th><img src="../src/shoes1.png"width="75%"></th>
+<th><img src="../src/shoes2.png"width="60%"></th>
+<th><img src="../src/shoes3.png"width="75%"></th>
+<th><img src="../src/shoes4.png"width="75%"></th>
+<th><img src="../src/shoes5.png"width="55%">
+    <a class = "bu" href="../public/shoes.html">
+    <button>Show Details></button>
+</a></th>
+</tr>
+</table>
+<br>
+<table border="0"width="100%" bgcolor="white">
+<tr>
+<td colspan="5"><h2>Fitness & Outdoors</h2><hr></td>
+<tr>
+<th><img src="../src/fit1.png"width="75%"></th>
+<th><img src="../src/fit2.png"width="75%"></th>
+<th><img src="../src/fit3.png"width="75%"></th>
+<th><img src="../src/fit4.png"width="75%"></th>
+<th><img src="../src/fit5.png"width="63%">
+    <a class = "bu" href="../public/allfo.html">
+    <button>Show Details></button>
+</a></th>
+</tr>
+</table>
+<br>
+<table border="0"width="100%" bgcolor="white">
+<tr>
+<td colspan="5"><h2>Office & Stationary</h2><hr></td>
+<tr>
+<th><img src="../src/office4.jpg"width="100%"></th>
+<th><img src="../src/os2.png"width="75%"></th>
+<th><img src="../src/os3.png"width="100"></th>
+<th><img src="../src/os4.png"width="75%"></th>
+<th><img src="../src/os5.png"width="62%">
+    <a class = "bu" href="../public/allos.html">
+    <button>Show Details></button>
+</a></th>
+</tr>
+</table>
+</div>
+<footer class="foot">
+      @TEAM-AMAZON!! .MEMBERS: VAISHNAVI BAKHADE, MUSKAN LAKHNAI, DNYANESHWARI GANORKAR, DHANASHREE SAWARKAR, ROSHAN KHANDAGALE, ADITYA JAYSINGHPURE, SHARJEEL KHAN
+  </footer>
+</body>
+</html>

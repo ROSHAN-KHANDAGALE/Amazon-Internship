@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cart</title>
+	<style type = "text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.all{
+				padding: 20px;
+				background: lightskyblue;
+				border: 2px solid orange;
+			}
+			body{
+
+				width: 400px;
+				height: 40px;
+				position: absolute;
+				text-align: center;
+				box-sizing: border-box;
+				left: 50%;
+				bottom: 495px;
+				transform: translate(-45%, 50%);
+				background-image: url('../src/bg3.jpg') ;
+				background-size: cover;
+				font-family: Courier;
+			}
+			.rad label{
+				font-family: Candara;
+				font-size: 25px;
+				color: black;
+				cursor: pointer;
+				padding: 10px;
+			}
+			.mobile input{
+				margin: 10px;
+				padding: 15px;
+				width: 240px;
+				height: 10px;
+				text-align: center;
+				font-family: Candara;
+				font-size: 18px;
+			}
+			.but label{
+				margin: 5px;
+				padding: 8px;
+				font-family: Candara;
+				font-size: 20px;
+				background: gold;
+				cursor: pointer;
+				box-sizing: border-box;
+				border: 2px solid green;
+				font-weight: bold;
+			}
+	</style>
+</head>
+<body>
+ <div class="all">
+	<form class="page" action="login.html">
+  	   <h1><font align = "left">Welcome</h1>	
+  	   		<br>
+  	   		<br></font>
+  	<div class = "rad">
+  	    <input type = "radio" name = "status"><a href = "../public/newuser.html">
+  	    			<label>Create Account. </label>
+  	    			<font size = "3">New to Amazon?</font>
+  	    		</a>
+  	    	<br>
+  	    <input type = "radio" name = "status"><a href = "../public/login.html">
+  	    			<label>Login.</label>
+  	    			<font size = "3">Already a Customer?</font>
+  	    		</a>
+  	</div>
+  	    	<br>
+  	<div class="mobile">    	
+  	    <input type = "tel" placeholder="Mobile Number or Email">
+  	</div>
+  		 	<br>
+  	<div class = "but">
+  			<a href = "../public/buynow.html">
+  			    <label>Continue</label>
+  			</a>
+  	</div>    
+  			<br>
+  	    <p><font size = "3">By continuing, you Agree to Amazon's Conditions of Use and privacy Notice.</p></font>
+   </form>
+</div>
+</body>
+</html>

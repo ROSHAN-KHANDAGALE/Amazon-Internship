@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amazon Login form</title>
+	<style type="text/css" >
+.page{
+  width: 340px;
+  padding: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.9);
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Georgia;
+	background-image: url('../src/bg1.jpg');
+	background-size: cover;
+
+}
+input[type = "text"],input[type = "password"]{
+	border: 0;
+	background: black;
+	margin: 10px auto;
+	padding: 14px 10px;
+	border: 2px solid lime;
+	display: block;
+	text-align: center;
+	width: 280px;
+	height: 38px;
+	color: white;
+	border-radius: 24px;
+	font-family: Impact;
+	font-size: 20px;
+	transition: 0.2s;
+} 
+input[type = "text"]:focus,input[type = "password"]:focus{
+  width: 280px;
+  border-color: darkblue;
+}
+.move a label{
+	border: 2px ;
+	padding: 14px 30px;
+	margin: 10px auto;
+	display: block;
+	font-family: Impact;
+	color: black;
+	background: lightskyblue;
+	font-size: 20px;
+	text-align: center;
+	width: 80px;
+	height: 20px;
+	border-radius: 24px;
+	cursor: pointer;
+	transition-duration: 0.25s;
+}
+.move a label:hover{
+	background: lightseagreen;
+}
+h1{
+ 	border: 0;
+  margin: 5px;
+ 	color: red;
+ 	text-transform: uppercase;
+ 	font-size: 45px;
+}
+a{
+  border :  0;
+  font-size: 20px;
+  text-align: right;
+  padding: 10px 40px;
+  color: yellowgreen;
+}
+p{
+  font-family: Aerial;
+  text-align: center;
+  color: blue;
+  font-size: 19px;
+}	
+img{
+  height: 100vh;
+  background-size: cover; 
+}
+ul {
+	float: right;
+ 	background: transparent ;
+}
+ul li{
+	display: inline;
+	font-family: Impact;
+}
+
+ul li a:hover{
+	background: transparent;
+	transition: 0.7s ease;
+	cursor: pointer;
+}
+ul li a label{
+  background: transparent;
+  display: inline-flex;
+  font-size: 25px;
+  color:  lavender;
+  border: 1px black;
+  margin:  0;
+  font-family: 	Impact;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+.user1{
+        margin-left: 47%;
+        margin-right: 45%;
+        margin-top: 10.1%;
+        position: absolute;
+        width: 6%; 
+        height: 85px;
+        background: rgba(0, 0, 0, 0.5);
+        box-sizing: border-box; 
+        border-radius: 55px;
+        background: transparent;
+        z-index: 1;
+      }
+      .user2{
+        margin-left: 40%;
+        margin-right: 45%;
+        margin-top: 10.1%;
+        position: absolute;
+        width: 6%; 
+        height: 85px;
+        background: rgba(0, 0, 0, 0.5);
+        box-sizing: border-box; 
+        border-radius: 55px;
+        background: transparent;
+        z-index: 1;
+      }
+      .user3{
+        margin-left: 54%;
+        margin-right: 45%;
+        margin-top: 10.1%;
+        position: absolute;
+        width: 6%; 
+        height: 83px;
+        background: rgba(0, 0, 0, 0.5);
+        box-sizing: border-box; 
+        border-radius: 55px;
+        background: transparent;
+        z-index: 1;
+      }
+
+ </style>
+</head>
+<body> 
+	<div>
+        <image src = "../src/fb.png" class="user1">
+    	   <image src = "../src/mail.png" class="user2">
+    		  <image src = "../src/whatsapp.png" class="user3">
+  </div>
+ <header>
+ 	<div>
+ 		<ul>
+ 			<li><a href = "../public/newuser.html">
+ 				<label>Create New Account</label>
+ 			</a></li>
+ 			<li><a href = "../public/index.html">
+ 				<label>Skip >></label>
+ 			</a></li>
+ 		</ul>
+ 	</div>
+ </header>
+	<form class="page" action="../public/login.html">
+  	   <h1>Login</h1><br><br>
+  	    <p>Or use your email account to Sigin</p>
+  	    <input type = "text" placeholder="Enter email / phone number">
+  	    <input type = "password" placeholder="Password">
+  	    <br>
+  	    <a href="../public/forgot.html">Forgot Password?</a>
+  	    <br>
+  	<div class="move">
+  		<a href = "../public/index.html">
+  		  <label>Login</label>
+  		</a>
+  	</div>   
+  	    <p>By clicking on this you Accept our Policies, Terms & Conditions</p>
+   </form>
+</body>
+</html>
